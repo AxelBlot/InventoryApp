@@ -1,0 +1,9 @@
+C:\Users\Axel\Documents\Visual Studio 2008\Projects\InventoryApp\InventoryApp\bin\Debug\Database.sdf
+C:\Users\Axel\Documents\Visual Studio 2008\Projects\InventoryApp\InventoryApp\bin\Debug\InventoryApp.exe
+C:\Users\Axel\Documents\Visual Studio 2008\Projects\InventoryApp\InventoryApp\bin\Debug\InventoryApp.pdb
+C:\Users\Axel\Documents\Visual Studio 2008\Projects\InventoryApp\InventoryApp\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Axel\Documents\Visual Studio 2008\Projects\InventoryApp\InventoryApp\obj\Debug\InventoryApp.Properties.Resources.resources
+C:\Users\Axel\Documents\Visual Studio 2008\Projects\InventoryApp\InventoryApp\obj\Debug\InventoryApp.csproj.GenerateResource.Cache
+C:\Users\Axel\Documents\Visual Studio 2008\Projects\InventoryApp\InventoryApp\obj\Debug\InventoryApp.exe
+C:\Users\Axel\Documents\Visual Studio 2008\Projects\InventoryApp\InventoryApp\obj\Debug\InventoryApp.pdb
+C:\Users\Axel\Documents\Visual Studio 2008\Projects\InventoryApp\InventoryApp\obj\Debug\InventoryApp.Inventaire.resources
