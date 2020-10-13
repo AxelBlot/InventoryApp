@@ -60,9 +60,9 @@ namespace InventoryApp
                         | System.Windows.Forms.AnchorStyles.Right)));
             ProductsDataGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             ProductsDataGrid.DataSource = this.ProductsBindingSource;
-            ProductsDataGrid.Location = new System.Drawing.Point(0, 90);
+            ProductsDataGrid.Location = new System.Drawing.Point(13, 90);
             ProductsDataGrid.Name = "ProductsDataGrid";
-            ProductsDataGrid.Size = new System.Drawing.Size(545, 255);
+            ProductsDataGrid.Size = new System.Drawing.Size(519, 243);
             ProductsDataGrid.TabIndex = 0;
             ProductsDataGrid.TableStyles.Add(this.pRODUCTSTableStyleDataGridTableStyle);
             // 
@@ -93,7 +93,6 @@ namespace InventoryApp
             eXPIRING_DATEDataGridColumnStyleDataGridTextBoxColumn.HeaderText = "EXPIRING_DATE";
             eXPIRING_DATEDataGridColumnStyleDataGridTextBoxColumn.MappingName = "EXPIRING_DATE";
             eXPIRING_DATEDataGridColumnStyleDataGridTextBoxColumn.Width = 125;
-            
             // 
             // pRODUCTSTableAdapter
             // 
@@ -108,6 +107,7 @@ namespace InventoryApp
             this.ButtonRefresh.TabIndex = 1;
             this.ButtonRefresh.TabStop = false;
             this.ButtonRefresh.Text = "Actualiser";
+            this.ButtonRefresh.Click += new System.EventHandler(this.ButtonRefresh_Click);
             // 
             // ButtonAdd
             // 

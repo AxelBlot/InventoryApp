@@ -397,6 +397,7 @@ namespace InventoryApp {
                                 this.columnREFERENCE}, false));
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint2", new global::System.Data.DataColumn[] {
                                 this.columnID_PRODUCT}, true));
+                this.columnID_PRODUCT.AutoIncrementSeed = 1;
                 this.columnID_PRODUCT.AllowDBNull = false;
                 this.columnID_PRODUCT.Unique = true;
                 this.columnREFERENCE.AllowDBNull = false;
@@ -773,12 +774,22 @@ namespace InventoryApp.ProductsDatasetTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlServerCe.SqlCeCommand[1];
+            this._commandCollection = new global::System.Data.SqlServerCe.SqlCeCommand[3];
             this._commandCollection[0] = new global::System.Data.SqlServerCe.SqlCeCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT [ID_PRODUCT], [REFERENCE], [EXPIRING_DATE], [DT_CRE], [USER_CRE], [DT_MOD]" +
                 ", [USER_MOD] FROM [PRODUCTS]";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlServerCe.SqlCeCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT [ID_PRODUCT], [REFERENCE], [EXPIRING_DATE], [DT_CRE], [USER_CRE], [DT_MOD]" +
+                ", [USER_MOD] FROM [PRODUCTS] order by [EXPIRING_DATE] desc";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[2] = new global::System.Data.SqlServerCe.SqlCeCommand();
+            this._commandCollection[2].Connection = this.Connection;
+            this._commandCollection[2].CommandText = "SELECT [ID_PRODUCT], [REFERENCE], [EXPIRING_DATE], [DT_CRE], [USER_CRE], [DT_MOD]" +
+                ", [USER_MOD] FROM [PRODUCTS] order by [EXPIRING_DATE] asc";
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -799,6 +810,28 @@ namespace InventoryApp.ProductsDatasetTableAdapters {
             ProductsDataset.PRODUCTSDataTable dataTable = new ProductsDataset.PRODUCTSDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillByDate(ProductsDataset.PRODUCTSDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillByExistingDate(ProductsDataset.PRODUCTSDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
         }
     }
 }

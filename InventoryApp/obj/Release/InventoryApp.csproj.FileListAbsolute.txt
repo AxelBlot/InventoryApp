@@ -1,0 +1,11 @@
+C:\Users\Axel\Documents\Visual Studio 2008\Projects\InventoryApp\InventoryApp\bin\Release\Database.sdf
+C:\Users\Axel\Documents\Visual Studio 2008\Projects\InventoryApp\InventoryApp\bin\Release\InventoryApp.exe
+C:\Users\Axel\Documents\Visual Studio 2008\Projects\InventoryApp\InventoryApp\bin\Release\InventoryApp.pdb
+C:\Users\Axel\Documents\Visual Studio 2008\Projects\InventoryApp\InventoryApp\bin\Release\System.Data.SqlClient.dll
+C:\Users\Axel\Documents\Visual Studio 2008\Projects\InventoryApp\InventoryApp\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Axel\Documents\Visual Studio 2008\Projects\InventoryApp\InventoryApp\obj\Release\InventoryApp.AddReference.resources
+C:\Users\Axel\Documents\Visual Studio 2008\Projects\InventoryApp\InventoryApp\obj\Release\InventoryApp.Inventaire.resources
+C:\Users\Axel\Documents\Visual Studio 2008\Projects\InventoryApp\InventoryApp\obj\Release\InventoryApp.Properties.Resources.resources
+C:\Users\Axel\Documents\Visual Studio 2008\Projects\InventoryApp\InventoryApp\obj\Release\InventoryApp.csproj.GenerateResource.Cache
+C:\Users\Axel\Documents\Visual Studio 2008\Projects\InventoryApp\InventoryApp\obj\Release\InventoryApp.exe
+C:\Users\Axel\Documents\Visual Studio 2008\Projects\InventoryApp\InventoryApp\obj\Release\InventoryApp.pdb

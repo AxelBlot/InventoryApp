@@ -7,3 +7,5 @@ C:\Users\Axel\Documents\Visual Studio 2008\Projects\InventoryApp\InventoryApp\ob
 C:\Users\Axel\Documents\Visual Studio 2008\Projects\InventoryApp\InventoryApp\obj\Debug\InventoryApp.exe
 C:\Users\Axel\Documents\Visual Studio 2008\Projects\InventoryApp\InventoryApp\obj\Debug\InventoryApp.pdb
 C:\Users\Axel\Documents\Visual Studio 2008\Projects\InventoryApp\InventoryApp\obj\Debug\InventoryApp.Inventaire.resources
+C:\Users\Axel\Documents\Visual Studio 2008\Projects\InventoryApp\InventoryApp\obj\Debug\InventoryApp.AddReference.resources
+C:\Users\Axel\Documents\Visual Studio 2008\Projects\InventoryApp\InventoryApp\bin\Debug\System.Data.SqlClient.dll
